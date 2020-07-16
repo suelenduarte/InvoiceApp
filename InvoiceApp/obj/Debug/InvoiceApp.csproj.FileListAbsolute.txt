@@ -1,0 +1,10 @@
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\bin\Debug\InvoiceApp.exe.config
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\bin\Debug\InvoiceApp.exe
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\bin\Debug\InvoiceApp.pdb
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\obj\Debug\InvoiceApp.csprojAssemblyReference.cache
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\obj\Debug\InvoiceApp.frmInvoiceTotal.resources
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\obj\Debug\InvoiceApp.Properties.Resources.resources
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\obj\Debug\InvoiceApp.csproj.GenerateResource.cache
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\obj\Debug\InvoiceApp.csproj.CoreCompileInputs.cache
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\obj\Debug\InvoiceApp.exe
+C:\Users\suele\Desktop\InvoiceApp\InvoiceApp\obj\Debug\InvoiceApp.pdb
