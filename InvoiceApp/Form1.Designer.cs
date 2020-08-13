@@ -56,7 +56,7 @@
             // lbEnterSubtotal
             // 
             this.lbEnterSubtotal.AutoSize = true;
-            this.lbEnterSubtotal.Location = new System.Drawing.Point(80, 81);
+            this.lbEnterSubtotal.Location = new System.Drawing.Point(80, 25);
             this.lbEnterSubtotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEnterSubtotal.Name = "lbEnterSubtotal";
             this.lbEnterSubtotal.Size = new System.Drawing.Size(132, 24);
@@ -66,7 +66,7 @@
             // lbSubtotal
             // 
             this.lbSubtotal.AutoSize = true;
-            this.lbSubtotal.Location = new System.Drawing.Point(80, 129);
+            this.lbSubtotal.Location = new System.Drawing.Point(84, 75);
             this.lbSubtotal.Name = "lbSubtotal";
             this.lbSubtotal.Size = new System.Drawing.Size(82, 24);
             this.lbSubtotal.TabIndex = 1;
@@ -75,7 +75,7 @@
             // lbDiscountPercent
             // 
             this.lbDiscountPercent.AutoSize = true;
-            this.lbDiscountPercent.Location = new System.Drawing.Point(80, 183);
+            this.lbDiscountPercent.Location = new System.Drawing.Point(84, 118);
             this.lbDiscountPercent.Name = "lbDiscountPercent";
             this.lbDiscountPercent.Size = new System.Drawing.Size(158, 24);
             this.lbDiscountPercent.TabIndex = 2;
@@ -84,7 +84,7 @@
             // lbDiscountAmount
             // 
             this.lbDiscountAmount.AutoSize = true;
-            this.lbDiscountAmount.Location = new System.Drawing.Point(80, 235);
+            this.lbDiscountAmount.Location = new System.Drawing.Point(84, 166);
             this.lbDiscountAmount.Name = "lbDiscountAmount";
             this.lbDiscountAmount.Size = new System.Drawing.Size(159, 24);
             this.lbDiscountAmount.TabIndex = 3;
@@ -93,7 +93,7 @@
             // lbTotal
             // 
             this.lbTotal.AutoSize = true;
-            this.lbTotal.Location = new System.Drawing.Point(80, 284);
+            this.lbTotal.Location = new System.Drawing.Point(84, 208);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(56, 24);
             this.lbTotal.TabIndex = 4;
@@ -102,7 +102,7 @@
             // lbNumberOfInvoices
             // 
             this.lbNumberOfInvoices.AutoSize = true;
-            this.lbNumberOfInvoices.Location = new System.Drawing.Point(466, 129);
+            this.lbNumberOfInvoices.Location = new System.Drawing.Point(393, 25);
             this.lbNumberOfInvoices.Name = "lbNumberOfInvoices";
             this.lbNumberOfInvoices.Size = new System.Drawing.Size(182, 24);
             this.lbNumberOfInvoices.TabIndex = 5;
@@ -111,7 +111,7 @@
             // lbTotalOfInvoices
             // 
             this.lbTotalOfInvoices.AutoSize = true;
-            this.lbTotalOfInvoices.Location = new System.Drawing.Point(470, 183);
+            this.lbTotalOfInvoices.Location = new System.Drawing.Point(393, 75);
             this.lbTotalOfInvoices.Name = "lbTotalOfInvoices";
             this.lbTotalOfInvoices.Size = new System.Drawing.Size(154, 24);
             this.lbTotalOfInvoices.TabIndex = 6;
@@ -120,7 +120,7 @@
             // lbInvoiceAverage
             // 
             this.lbInvoiceAverage.AutoSize = true;
-            this.lbInvoiceAverage.Location = new System.Drawing.Point(474, 235);
+            this.lbInvoiceAverage.Location = new System.Drawing.Point(393, 118);
             this.lbInvoiceAverage.Name = "lbInvoiceAverage";
             this.lbInvoiceAverage.Size = new System.Drawing.Size(151, 24);
             this.lbInvoiceAverage.TabIndex = 7;
@@ -128,7 +128,8 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(73, 400);
+            this.btnCalculate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCalculate.Location = new System.Drawing.Point(88, 269);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(124, 51);
             this.btnCalculate.TabIndex = 8;
@@ -138,7 +139,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(272, 400);
+            this.btnClear.Location = new System.Drawing.Point(305, 269);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(124, 51);
             this.btnClear.TabIndex = 9;
@@ -148,73 +149,81 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(474, 400);
+            this.btnExit.Location = new System.Drawing.Point(495, 269);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(124, 51);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtEnterSubtotal
             // 
-            this.txtEnterSubtotal.Location = new System.Drawing.Point(232, 82);
+            this.txtEnterSubtotal.Location = new System.Drawing.Point(244, 22);
             this.txtEnterSubtotal.Name = "txtEnterSubtotal";
             this.txtEnterSubtotal.Size = new System.Drawing.Size(100, 28);
             this.txtEnterSubtotal.TabIndex = 11;
             // 
             // txtSubtotal
             // 
-            this.txtSubtotal.Location = new System.Drawing.Point(168, 126);
+            this.txtSubtotal.Location = new System.Drawing.Point(244, 75);
             this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.ReadOnly = true;
             this.txtSubtotal.Size = new System.Drawing.Size(100, 28);
             this.txtSubtotal.TabIndex = 12;
             // 
             // txtDiscountPercent
             // 
-            this.txtDiscountPercent.Location = new System.Drawing.Point(244, 183);
+            this.txtDiscountPercent.Location = new System.Drawing.Point(244, 118);
             this.txtDiscountPercent.Name = "txtDiscountPercent";
+            this.txtDiscountPercent.ReadOnly = true;
             this.txtDiscountPercent.Size = new System.Drawing.Size(100, 28);
             this.txtDiscountPercent.TabIndex = 13;
             // 
             // txtDiscountAmount
             // 
-            this.txtDiscountAmount.Location = new System.Drawing.Point(272, 236);
+            this.txtDiscountAmount.Location = new System.Drawing.Point(261, 163);
             this.txtDiscountAmount.Name = "txtDiscountAmount";
+            this.txtDiscountAmount.ReadOnly = true;
             this.txtDiscountAmount.Size = new System.Drawing.Size(100, 28);
             this.txtDiscountAmount.TabIndex = 14;
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(168, 285);
+            this.txtTotal.Location = new System.Drawing.Point(160, 208);
             this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 28);
             this.txtTotal.TabIndex = 15;
             // 
             // txtNumberOfInvoices
             // 
-            this.txtNumberOfInvoices.Location = new System.Drawing.Point(700, 131);
+            this.txtNumberOfInvoices.Location = new System.Drawing.Point(585, 34);
             this.txtNumberOfInvoices.Name = "txtNumberOfInvoices";
+            this.txtNumberOfInvoices.ReadOnly = true;
             this.txtNumberOfInvoices.Size = new System.Drawing.Size(100, 28);
             this.txtNumberOfInvoices.TabIndex = 16;
             // 
             // txtTotalOfInvoices
             // 
-            this.txtTotalOfInvoices.Location = new System.Drawing.Point(658, 183);
+            this.txtTotalOfInvoices.Location = new System.Drawing.Point(585, 75);
             this.txtTotalOfInvoices.Name = "txtTotalOfInvoices";
+            this.txtTotalOfInvoices.ReadOnly = true;
             this.txtTotalOfInvoices.Size = new System.Drawing.Size(100, 28);
             this.txtTotalOfInvoices.TabIndex = 17;
             // 
             // txtInvoicesAverage
             // 
-            this.txtInvoicesAverage.Location = new System.Drawing.Point(658, 236);
+            this.txtInvoicesAverage.Location = new System.Drawing.Point(585, 118);
             this.txtInvoicesAverage.Name = "txtInvoicesAverage";
+            this.txtInvoicesAverage.ReadOnly = true;
             this.txtInvoicesAverage.Size = new System.Drawing.Size(100, 28);
             this.txtInvoicesAverage.TabIndex = 18;
             // 
             // lbLargestInvoice
             // 
             this.lbLargestInvoice.AutoSize = true;
-            this.lbLargestInvoice.Location = new System.Drawing.Point(478, 284);
+            this.lbLargestInvoice.Location = new System.Drawing.Point(393, 163);
             this.lbLargestInvoice.Name = "lbLargestInvoice";
             this.lbLargestInvoice.Size = new System.Drawing.Size(136, 24);
             this.lbLargestInvoice.TabIndex = 19;
@@ -223,7 +232,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(482, 330);
+            this.label2.Location = new System.Drawing.Point(393, 212);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 24);
             this.label2.TabIndex = 20;
@@ -231,15 +240,17 @@
             // 
             // txtLargestInvoice
             // 
-            this.txtLargestInvoice.Location = new System.Drawing.Point(658, 284);
+            this.txtLargestInvoice.Location = new System.Drawing.Point(585, 160);
             this.txtLargestInvoice.Name = "txtLargestInvoice";
+            this.txtLargestInvoice.ReadOnly = true;
             this.txtLargestInvoice.Size = new System.Drawing.Size(100, 28);
             this.txtLargestInvoice.TabIndex = 21;
             // 
             // txtLowestInvoce
             // 
-            this.txtLowestInvoce.Location = new System.Drawing.Point(658, 331);
+            this.txtLowestInvoce.Location = new System.Drawing.Point(585, 208);
             this.txtLowestInvoce.Name = "txtLowestInvoce";
+            this.txtLowestInvoce.ReadOnly = true;
             this.txtLowestInvoce.Size = new System.Drawing.Size(100, 28);
             this.txtLowestInvoce.TabIndex = 22;
             // 
@@ -247,7 +258,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 859);
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.ClientSize = new System.Drawing.Size(762, 426);
             this.Controls.Add(this.txtLowestInvoce);
             this.Controls.Add(this.txtLargestInvoice);
             this.Controls.Add(this.label2);
@@ -272,6 +284,7 @@
             this.Controls.Add(this.lbSubtotal);
             this.Controls.Add(this.lbEnterSubtotal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInvoiceTotal";
             this.Text = "Invoice Total";
